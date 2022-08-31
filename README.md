@@ -1,6 +1,6 @@
 # JavaScript Crash Course for Beginners
 
-### Aula 01
+### Class 01
 * Link the javascript;
     * Internal;
     * External.
@@ -8,3 +8,4 @@
     * var;
     * let;
     * const.
+* Variables scope.
