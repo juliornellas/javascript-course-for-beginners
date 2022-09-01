@@ -1,6 +1,6 @@
 # JavaScript Crash Course for Beginners
 
-> No knowledgment is required
+> Knowledgment is not required
 
 ### Class 01
 1. Link the javascript;
