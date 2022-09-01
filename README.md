@@ -49,7 +49,10 @@
         * Deep copy
 
 ### Class 06
-1. Comparsion
+1. Operators
+    * Comparsion
+    * Logical
+    * Ternary
 
 ### Class 07
 1. Conditional statements
