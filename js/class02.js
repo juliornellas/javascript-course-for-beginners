@@ -22,6 +22,15 @@ console.log('New X value', x)
 x *= 2 // x = 9 * 2
 console.log('New X value', x)
 
+//Strings (concat)
+let name = "Saci";
+let lastName = "Perere";
+let fullName = name + " " + lastName;
+console.log("Fullname", fullName)
+
+let sum = 5 + "1"
+console.log("SUM", sum)
+
 /**
 * Arithmetic Operators
 * +	Addition

@@ -47,3 +47,20 @@
     * Copy
         * Shallow copy
         * Deep copy
+
+### Class 06
+1. Comparsion
+
+### Class 07
+1. Conditional statements
+    * IF, ELSE and ELSE IF
+2. Switch statement
+
+### Class 08
+1. Loops
+    * For
+    * For IN
+    * For OF
+    * While
+    * Break
+    * Continue
