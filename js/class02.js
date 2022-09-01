@@ -1,49 +1,42 @@
 /**
- * Class 02
- */
+ * Assignment Operators
+Operator	Example	    Same As
+=	        x = y	    x = y
++=	        x += y	    x = x + y
+-=	        x -= y	    x = x - y
+*=	        x *= y	    x = x * y
+/=	        x /= y	    x = x / y
+%=	        x %= y	    x = x % y
+**=	        x **= y	    x = x ** y
+*/
 
-//Regular
-function sayHello(){
-    console.log("Hi Folks!");
-}
+let x = 10;
+console.log('X value', x)
 
-sayHello()
+x += 3 // x = 10 + 3
+console.log('New X value', x)
 
-//Arrow function
-const sayHiTo = () => {
-    console.log('Hi guys!')
-}
+x -= 4 // x = 10 - 4
+console.log('New X value', x)
 
-sayHiTo();
+x *= 2 // x = 9 * 2
+console.log('New X value', x)
 
-//Passing parameters
-//Regular
-function sum(value1, value2){
-    console.log('The sum value is: ', value1+value2)
-}
+/**
+* Arithmetic Operators
+* +	Addition
+* -	Subtraction
+* *	Multiplication
+* **	Exponentiation (ES2016)
+* /	Division
+* %	Modulus (Division Remainder)
+* ++ Increment
+* -- Decrement
+*/
 
-sum(7, 6);
-//Arrow function
-const minus = (value1, value2) => {
-    console.log('The min value is: ', value1-value2)
-}
-minus(33,20);
-
-//Return
-const divide = (number1, number2) => {
-    // return number1 / number2;
-    // let result = number1 / number2;
-    //Tax to pay
-    // let tax = result * 1.1
-    // return tax;
-    return number1 / number2 * 1.1
-}
-
-console.log('The result is: ', divide(39, 3))
-
-// Optimize Arrow function
-// const optimize = (x, y)=> {
-//     return x + y;
-// }
-const optimize = (x, y) => x + y
-console.log('Optimized', optimize(9, 4))
+let result = 3+3;
+console.log('Result', result)
+result++;
+console.log('Result increment', result)
+result--;
+console.log('Result decrement', result)
