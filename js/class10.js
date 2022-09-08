@@ -12,6 +12,12 @@ console.log('Number: ', Number("John"))
 console.log('Number:', Number(false))     // returns 0
 console.log('Number:', Number(true))      // returns 1
 
+//Check
+let n = 9;
+let conv = n.toString()
+console.log('Typeof :', typeof Number(13).toString())
+console.log('Typeof :', typeof conv)
+
 //String
 console.log('Convert to String: ', Date().toString())
 
