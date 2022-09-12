@@ -1,72 +1,49 @@
 /**
- * Class 03
+ * Class 02
  */
 
-let fruits = ["banana", "apple", "grape", "watermelon","pineapple"];
-
-console.log(fruits)
-console.log('Access item:', fruits[4])
-
-console.log('Size of fruits', fruits.length)
-console.log("Sort the items", fruits.sort())
-console.log("Reverse the items", fruits.reverse())
-console.log("Include the items", fruits.includes("apple"))
-
-if (fruits.includes("apple")){
-    console.log("Yes, we have apple pie!")
+//Regular
+function sayHello(){
+    console.log("Hi Folks!");
 }
 
-//Take the first position and remove it from the array
-console.log('Take the first position', fruits.shift())
-console.log('Updated', fruits)
+sayHello()
 
-//Take the last position and remove it from the array
-console.log('Take the first position', fruits.pop())
-console.log('Updated', fruits)
+//Arrow function
+const sayHiTo = () => {
+    console.log('Hi guys!')
+}
 
-//Include in the first position
-fruits.unshift("pear")
-console.log('Include the first position', fruits)
+sayHiTo();
 
-//Include in the last position
-fruits.push("orange")
-console.log('Include the last position', fruits)
+//Passing parameters
+//Regular
+function sum(value1, value2){
+    console.log('The sum value is: ', value1+value2)
+}
 
-// SLICE - remove a piece
-// Slice doesn't change the original array
-/**
- * O método slice() retorna uma cópia de parte de um array a partir de um subarray criado entre as posições início e fim (fim não é necessário) de um array original. O Array original não é modificado
- */
-let x = fruits.slice(3)
-console.log('Original array', fruits)
-console.log('Slice array', x)
+sum(7, 6);
+//Arrow function
+const minus = (value1, value2) => {
+    console.log('The min value is: ', value1-value2)
+}
+minus(33,20);
 
-//Set the interval (index to start, number of the element to finish)
-// let y = fruits.slice(1, 3)
-let y = fruits.slice(1, -1)
-console.log('Slice delimited array', y)
+//Return
+const divide = (number1, number2) => {
+    // return number1 / number2;
+    // let result = number1 / number2;
+    //Tax to pay
+    // let tax = result * 1.1
+    // return tax;
+    return number1 / number2 * 1.1
+}
 
-/**
- * SPLICE
- * O método splice() altera o conteúdo de uma lista, adicionando novos elementos enquanto remove elementos antigos.
- */
+console.log('The result is: ', divide(39, 3))
 
-let brands = ["Ford", "Fiat", "Ferrari", "Mercedez", "Chevrolet"]
-console.log('Brand Array', brands)
-
-//Start position 2, remove 0 elements and add another
-brands.splice(2, 0, "Hyundai")
-console.log('New Brand Array', brands)
-
-let removeItem = brands.splice(3, 1)
-console.log('New Brand After Array', brands)
-console.log('Removed Brand', removeItem)
-
-// FOREACH - Running through array
-// fruits.forEach(function(fruit){
-//     console.log(`The fruit is ${fruit}`)
-// })
-// fruits.forEach((item)=>{
-//     console.log(`The fruit is ${item}`)
-// })
-fruits.forEach((item)=>console.log(`The fruit is ${item}`))
+// Optimize Arrow function
+// const optimize = (x, y)=> {
+//     return x + y;
+// }
+const optimize = (x, y) => x + y
+console.log('Optimized', optimize(9, 4))

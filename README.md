@@ -14,14 +14,17 @@
 4. Variables scope;
 
 ### Class 02
-1. Arithmetic & Assignment Operators
+1. String Methods
 
 ### Class 03
+1. Arithmetic & Assignment Operators
+
+### Class 04
 1. Functions
     * Regular
     * Arrow function
 
-### Class 04
+### Class 05
 1. Arrays
     1. Access items
     2. Attribute
@@ -38,7 +41,7 @@
         * Splice
         * Foreach
 
-### Class 05
+### Class 06
 1. Objects
     * New attributes
     * Merge
@@ -48,18 +51,18 @@
         * Shallow copy
         * Deep copy
 
-### Class 06
+### Class 07
 1. Operators
     * Comparsion
     * Logical
     * Ternary
 
-### Class 07
+### Class 08
 1. Conditional statements
     * IF, ELSE and ELSE IF
 2. Switch statement
 
-### Class 08
+### Class 09
 1. Loops
     * For
     * For IN
@@ -68,10 +71,10 @@
     * Break
     * Continue
 
-### Class 09
+### Class 10
 1. Typeof
 
-## Class 10
+## Class 11
 1. Type Conversion
     * String
     * Number

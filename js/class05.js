@@ -1,78 +1,72 @@
 /**
- * Objects
+ * Class 03
  */
 
-let car = {
-    type: "Ford",
-    model: "Focus",
-    color: "White"
+let fruits = ["banana", "apple", "grape", "watermelon","pineapple"];
+
+console.log(fruits)
+console.log('Access item:', fruits[4])
+
+console.log('Size of fruits', fruits.length)
+console.log("Sort the items", fruits.sort())
+console.log("Reverse the items", fruits.reverse())
+console.log("Include the items", fruits.includes("apple"))
+
+if (fruits.includes("apple")){
+    console.log("Yes, we have apple pie!")
 }
 
-console.log("My car", car)
-console.log("Model", car.model)
-console.log("Color", car['color'])
+//Take the first position and remove it from the array
+console.log('Take the first position', fruits.shift())
+console.log('Updated', fruits)
 
-//Copy
-let copy = {...car}
-copy.color = "Grey"
-console.log('Copy', copy)
-console.log('Original', car)
+//Take the last position and remove it from the array
+console.log('Take the first position', fruits.pop())
+console.log('Updated', fruits)
 
-//Not a copy
-let notCopy = car
-notCopy.color = "Pink"
-console.log('Not a copy', notCopy)
-console.log('Original', car)
+//Include in the first position
+fruits.unshift("pear")
+console.log('Include the first position', fruits)
 
-// Merge
-let options = {
-    gearbox: 5,
-    break: true
-}
+//Include in the last position
+fruits.push("orange")
+console.log('Include the last position', fruits)
 
-console.log("Options", options)
+// SLICE - remove a piece
+// Slice doesn't change the original array
+/**
+ * O método slice() retorna uma cópia de parte de um array a partir de um subarray criado entre as posições início e fim (fim não é necessário) de um array original. O Array original não é modificado
+ */
+let x = fruits.slice(3)
+console.log('Original array', fruits)
+console.log('Slice array', x)
 
-//Srpead operator
-let newObj = {...car, ...options}
-console.log("New Object", newObj)
+//Set the interval (index to start, number of the element to finish)
+// let y = fruits.slice(1, 3)
+let y = fruits.slice(1, -1)
+console.log('Slice delimited array', y)
 
-newObj.color = 'Red';
-console.log('Change color of the newObj',  newObj)
-console.log('Color of the first object',  car)
+/**
+ * SPLICE
+ * O método splice() altera o conteúdo de uma lista, adicionando novos elementos enquanto remove elementos antigos.
+ */
 
-//Object.assign()
-// let otherObj = Object.assign({}, car, options)
-let otherObj = Object.assign(car, options)
-console.log('Other new Object', otherObj)
+let brands = ["Ford", "Fiat", "Ferrari", "Mercedez", "Chevrolet"]
+console.log('Brand Array', brands)
 
-otherObj.color = 'Blue';
-console.log('Change color of the otherObj',  otherObj)
-console.log('Color of the first object',  car)
+//Start position 2, remove 0 elements and add another
+brands.splice(2, 0, "Hyundai")
+console.log('New Brand Array', brands)
 
-//Shallow copy of spread operator
-let bike = {
-    color: "Red",
-    details: {
-        pedals: 2,
-        wheels: 2,
-        break: true
-    }
-}
+let removeItem = brands.splice(3, 1)
+console.log('New Brand After Array', brands)
+console.log('Removed Brand', removeItem)
 
-console.log('Bike', bike)
-
-// let copyBike = {...bike}
-// console.log('Copy of Bike', copyBike)
-
-// copyBike.color = "Black"
-// copyBike.details.break = false
-// console.log('Change Copy of Bike', copyBike)
-// console.log('Bike', bike)
-
-// let copyBike2 = {...bike, details: {...bike.details}}
-// console.log('Copy of Bike 2', copyBike2)
-
-// copyBike2.details.break = false
-// console.log('Change Copy of Bike 2', copyBike2)
-// console.log('Bike', bike)
-
+// FOREACH - Running through array
+// fruits.forEach(function(fruit){
+//     console.log(`The fruit is ${fruit}`)
+// })
+// fruits.forEach((item)=>{
+//     console.log(`The fruit is ${item}`)
+// })
+fruits.forEach((item)=>console.log(`The fruit is ${item}`))
