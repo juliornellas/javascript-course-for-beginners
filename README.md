@@ -6,7 +6,12 @@
 1. Link the javascript;
     * Internal;
     * External.
-2. Console.log
+2. Console
+    * .log
+    * .warn
+    * .info
+    * .danger
+
 3. Variables;
     * var;
     * let;
@@ -15,6 +20,7 @@
 
 ### Class 02
 1. String Methods
+    * Template literal
 
 ### Class 03
 1. Arithmetic & Assignment Operators
