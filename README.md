@@ -6,16 +6,18 @@
 1. Link the javascript;
     * Internal;
     * External.
+
 2. Console
     * .log
     * .warn
     * .info
-    * .danger
+    * .error
 
 3. Variables;
     * var;
     * let;
     * const.
+
 4. Variables scope;
 
 ### Class 02
